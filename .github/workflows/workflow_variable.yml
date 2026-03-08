@@ -1,7 +1,8 @@
 name: Variable for workflow
 
 on: 
-   push main 
+   push:
+   branches: ["main"] 
 
 env:
    cloud: Amazon Web Service
