@@ -17,7 +17,7 @@ env:
 
 steps:
 
--name: "introducing the order of the day"concurrency: 
+-name: "introducing the order of the day"
 run: echo "$Greetings $First_name is using $cloud"
 
 env:
