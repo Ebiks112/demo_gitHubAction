@@ -1,0 +1,23 @@
+name: Variable for workflow
+
+on: 
+   workflow_dispatch: 
+
+env:
+   cloud: Amazon Web Service
+
+jobs:
+   Introduction
+
+runs-on: ubuntu-latest
+
+env:
+   Greetings: How far
+
+steps:
+
+-name: "introducing the order of the day"concurrency: 
+run: echo "$Greetings $First_name is using $cloud"
+
+env:
+   First_name: Ebiks4real
