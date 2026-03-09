@@ -4,12 +4,12 @@ on:
   push:
     branches: ["main"]
     
-env:
+evn:
   car: BMW
-jobs:
-  introducing_the_car_for_the_race:
+job:
+  "introducing the car for the race":
     runs-on: ubuntu-latest
-    env:
+    evn:
       overseas: Paris
       
     steps:
@@ -17,6 +17,6 @@ jobs:
       - name: "showing the winning car"
         run: echo "$First_Name will be going $overseas with his $car for the ${{vars.GAME}}"
       
-     env:
+     evn:
         First_Name: Ebibo
     
