@@ -1,0 +1,20 @@
+name: "configuration variable project"
+
+on:
+  push:
+    branches: ["main"]
+
+env:
+  car: BMW
+
+jobs:
+  introducing_the_car_for_the_race:
+    runs-on: ubuntu-latest
+
+    env:
+      overseas: Paris
+      First_Name: Ebibo
+
+    steps:
+      - name: "showing the winning car"
+        run: echo "$First_Name will be going $overseas with his $car for the ${{ vars.GAME }}"
