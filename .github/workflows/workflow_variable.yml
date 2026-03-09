@@ -2,23 +2,23 @@ name: Variable for workflow
 
 on: 
    push:
-   branches: ["main"] 
+     branches: ["main"] 
 
 env:
-   cloud: Amazon Web Service
+  cloud: Amazon Web Service
 
 jobs:
-   Introduction
+  Introduction:
 
-runs-on: ubuntu-latest
+   runs-on: ubuntu-latest
 
-env:
-   Greetings: How far
+   env:
+     Greetings: How far
 
-steps:
+   steps:
 
--name: "introducing the order of the day"
-run: echo "$Greetings $First_name is using $cloud"
+     - name: "introducing the order of the day"
+       run: echo "$Greetings $First_name is using $cloud"
 
-env:
-   First_name: Ebiks4real
+       env:
+         First_name: Ebiks4real
