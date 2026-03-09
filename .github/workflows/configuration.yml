@@ -11,9 +11,12 @@ job:
     runs-on: ubuntu-latest
     evn:
       overseas: Paris
+      
     steps:
+    
       - name: "showing the winning car"
-      runs: echo "$First_Name will be going $overseas with his $car for the ${{vars.GAME}}"
-      evn:
+        run: echo "$First_Name will be going $overseas with his $car for the ${{vars.GAME}}"
+      
+     evn:
         First_Name: Ebibo
     
