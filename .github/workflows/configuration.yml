@@ -7,7 +7,7 @@ on:
 evn:
   car: BMW
 job:
-  introducing the car for the race:
+  "introducing the car for the race":
     runs-on: ubuntu-latest
     evn:
       overseas: Paris
